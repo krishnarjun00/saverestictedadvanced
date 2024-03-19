@@ -23,10 +23,6 @@ FORCESUB = "hackermittron"
 AUTH = 6389088397
 SUDO_USERS = []
 
-if len(AUTH) != 0:
-    SUDO_USERS = {int(AUTH.strip()) for AUTH in AUTH.split()}
-else:
-    SUDO_USERS = set()
 
 bot = TelegramClient('bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN) 
 
