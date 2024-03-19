@@ -24,7 +24,7 @@ if __name__ == "__main__":
     from . import bot
     import glob
     from pathlib import Path
-    from utils import load_plugins
+    from main.utils import load_plugins
     
     path = "main/plugins/*.py"
     files = glob.glob(path)
